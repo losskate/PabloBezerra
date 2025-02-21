@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio Skatista</title>
+  <link rel="icon" href="Loss.png" type="image/png">
+  <title>Pablo Bezerra</title>
   <link rel="stylesheet" href="styles.css" />
   <!-- Font Awesome para os ícones -->
   <link
@@ -18,7 +19,7 @@
   <!-- Header -->
   <header class="section-animate">
     <div class="container header-container">
-      <h1 class="logo">Pablo Bezerra </h1>
+      <h1 class="logo">Pablo Bezerra</h1>
       <nav>
         <ul class="nav-links">
           <li><a href="#sobre">Sobre</a></li>
@@ -48,10 +49,10 @@
       <h2>Sobre Mim</h2>
       <p>
         Meu nome é Pablo Bezerra e, desde muito cedo, o skate foi mais que um esporte – foi uma paixão que me moldou como pessoa. Crescendo entre pistas e desafios, cada manobra e cada queda me ensinaram sobre resiliência, disciplina e a importância de ultrapassar limites. Participei de diversas competições, onde aprendi não só a técnica, mas também o valor do esforço, da dedicação e da humildade em cada vitória e até mesmo nas derrotas.
-
-Hoje, minha jornada no skate assume um novo significado: compartilhar conhecimento e inspirar pessoas de todas as idades. Como instrutor, busco transmitir não apenas truques e técnicas, mas sobretudo os valores que aprendi ao longo dos anos. Para mim, o skate é muito mais do que simples manobras – é uma forma de viver, de se expressar e de se reinventar constantemente, com respeito e autenticidade.
-
-Acredito que cada deslize, cada conquista e cada nova manobra é um convite para crescer e evoluir, tanto no esporte quanto na vida. Convido você a embarcar nessa jornada, onde o skate é a paixão que une, transforma e inspira a busca por um caminho repleto de desafios e superações..
+        <br /><br />
+        Hoje, minha jornada no skate assume um novo significado: compartilhar conhecimento e inspirar pessoas de todas as idades. Como instrutor, busco transmitir não apenas truques e técnicas, mas sobretudo os valores que aprendi ao longo dos anos. Para mim, o skate é muito mais do que simples manobras – é uma forma de viver, de se expressar e de se reinventar constantemente, com respeito e autenticidade.
+        <br /><br />
+        Acredito que cada deslize, cada conquista e cada nova manobra é um convite para crescer e evoluir, tanto no esporte quanto na vida. Convido você a embarcar nessa jornada, onde o skate é a paixão que une, transforma e inspira a busca por um caminho repleto de desafios e superações.
       </p>
     </div>
   </section>
@@ -86,33 +87,30 @@ Acredito que cada deslize, cada conquista e cada nova manobra é um convite para
       <h2>Contato</h2>
       <p>Entre em contato para agendar aulas, receber dicas ou bater um papo sobre skate!</p>
       <div class="social-links">
-        <a
-          href="https://wa.me/12991959633"
-          target="_blank"
-          class="social-icon whatsapp"
-        >
+        <a href="https://wa.me/12991695844" target="_blank" class="social-icon whatsapp">
           <i class="fab fa-whatsapp"></i>
           <span>WhatsApp</span>
         </a>
-        <a
-          href="https://www.instagram.com/skatelessons.pablo/"
-          target="_blank"
-          class="social-icon instagram"
-        >
+        <a href="https://www.instagram.com/losskate_/" target="_blank" class="social-icon instagram">
           <i class="fab fa-instagram"></i>
           <span>Instagram</span>
         </a>
-        <a
-          href="mailto:seuemail@dominio.com"
-          target="_blank"
-          class="social-icon email"
-        >
+        <!-- Botão que abre o modal do email -->
+        <a href="#" id="email-btn" class="social-icon email">
           <i class="fas fa-envelope"></i>
           <span>Email</span>
         </a>
       </div>
     </div>
   </section>
+
+  <!-- Modal para exibir o email -->
+  <div id="email-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Entre em contato: <strong>pablobezerraskate@gmail.com</strong></p>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="section-animate">
