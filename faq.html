@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Loss.png" type="image/png">
+    <title>FAQ - Pablo Bezerra</title>
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" />
+    <!-- Font Awesome para os ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHq+M2s3q5j80cE+HcT7B+G8rIOZc5CFYJPfK0b9yNfVl/2M8+R0TfqI0NEU1X6wjlXMB3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho (mesmo do index para manter consistência) -->
+    <header class="site-header" data-aos="fade-down">
+      <div class="container header-container">
+        <div class="logo-container">
+          <h1 class="logo">Pablo Bezerra</h1>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#trajetoria">Trajetória</a></li>
+            <li><a href="index.html#video">Vídeos</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Seção FAQ -->
+    <section id="faq" data-aos="fade-up">
+      <div class="container">
+        <h2>Perguntas Frequentes (FAQ)</h2>
+        
+        <div class="faq-item">
+          <h3>Como posso marcar uma aula de skate?</h3>
+          <p>Você pode agendar uma aula entrando em contato pelo WhatsApp ou enviando um e-mail para <a href="mailto:pablobezerraskate@gmail.com">pablobezerraskate@gmail.com</a>.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Onde posso ver seus vídeos?</h3>
+          <p>Alguns vídeos estão disponíveis na seção de Vídeos do meu portfólio. O restante dos vídeos podem ser encontrados nas minhas redes sociais.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Vocês atendem iniciantes?</h3>
+          <p>Sim, oferecemos aulas para todos os níveis, desde iniciantes até skatistas mais experientes.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Qual é o valor das aulas?</h3>
+          <p>Os valores variam conforme o pacote escolhido. Entre em contato para obter uma cotação personalizada.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="site-footer" data-aos="fade-up">
+      <div class="footer-content container">
+        <p>&copy; 2025 Portfólio Pablo Bezerra. Todos os direitos reservados.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <!-- AOS Library JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+    </script>
+  </body>
+</html>

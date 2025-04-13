@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Loss.png" type="image/png">
+    <title>Pablo Bezerra</title>
+    <!-- CSS customizado -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" />
+    <!-- Font Awesome para os ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHq+M2s3q5j80cE+HcT7B+G8rIOZc5CFYJPfK0b9yNfVl/2M8+R0TfqI0NEU1X6wjlXMB3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Header Moderno -->
+    <header class="site-header" data-aos="fade-down">
+      <div class="container header-container">
+        <div class="logo-container">
+          <h1 class="logo">Pablo Bezerra</h1>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#trajetoria">Trajetória</a></li>
+            <li><a href="#video">Vídeos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="hero" data-aos="fade-up">
+      <div class="hero-content">
+        <h2>Bem-vindo ao meu universo do skate!</h2>
+        <p>Skatista. Instrutor. Criador de conteúdo.</p>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" data-aos="fade-up">
+      <div class="container">
+        <h2>Sobre Mim</h2>
+        Meu nome é Pablo Bezerra, e o skate sempre foi mais que um esporte: foi uma paixão que me ensinou resiliência, disciplina e humildade. Hoje, como instrutor, compartilho não só técnicas, mas principalmente valores e lições aprendidas ao longo da minha trajetória. Para mim, o skate é uma forma de viver, expressar-se e evoluir constantemente. Convido você a embarcar comigo nessa jornada inspiradora, cheia de desafios e superações.
+        </p>
+      </div>
+    </section>
+
+    <!-- Trajetória -->
+    <section id="trajetoria" data-aos="fade-up">
+      <div class="container">
+        <h2>Minha Trajetória</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="pabloskt4.png" alt="Aulas de Skate" />
+            <h3>Aulas de Skate</h3>
+            <p>Aulas práticas e dinâmicas para todos os níveis.</p>
+          </div>
+          <div class="project-card">
+            <img src="pabloskt2.png" alt="Competições" />
+            <h3>Competições</h3>
+            <p>Experiências e vitórias que me impulsionam.</p>
+          </div>
+          <div class="project-card">
+            <img src="pabloskt3.png" alt="Dicas e Tricks" />
+            <h3>Dicas & Tricks</h3>
+            <p>Compartilho dicas e manobras para aprimorar seu estilo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- Vídeos -->
+<section id="video" data-aos="fade-up">
+  <div class="container">
+    <h2>Vídeos</h2>
+    <div class="videos-grid">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Dm7NYiwSfg8"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/GzmdfYcrGt4"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/tKKztXEQX_I"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+
+    <!-- Contato -->
+    <section id="contato" data-aos="fade-up">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Entre em contato para agendar aulas ou bater um papo!</p>
+        <div class="social-links">
+          <a href="https://wa.me/12991695844" target="_blank" class="social-icon whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://www.instagram.com/losskate_/" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="#" id="email-btn" class="social-icon email">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal para Email -->
+    <div id="email-modal" class="modal">
+      <div class="modal-content" data-aos="zoom-in">
+        <span class="close">&times;</span>
+        <p>Entre em contato: <strong>pablobezerraskate@gmail.com</strong></p>
+      </div>
+    </div>
+
+    <!-- Footer Moderno -->
+    <footer class="site-footer" data-aos="fade-up">
+      <div class="footer-content container">
+        <p>&copy; 2025 Portfólio Pablo Bezerra. Todos os direitos reservados.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <!-- AOS Library JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+      });
+    </script>
+  </body>
+</html>
