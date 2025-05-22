@@ -32,6 +32,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59LHSTL9"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<!-- Código merda do Vini (noscript) -->
+<script>
+    document.DataLayer = {
+        eventName: "PageView",
+        custom: {
+            report: {
+                FilterNames: "Número de Funcionários|Mosaic Business",
+                FilterValues: "0 até 10|20",
+                FilterAdditionalInfo: "xxx|xxxx"
+            }
+        },
+        rule: "pageLoad"
+    };
+
+    document.dispatchEvent(new CustomEvent('CustomPageView', { detail: document.DataLayer }));
+</script>
+<!-- Código merda do Vini (noscript) -->
+
+    
     <!-- Header Moderno -->
     <header class="site-header" data-aos="fade-down">
       <div class="container header-container">
