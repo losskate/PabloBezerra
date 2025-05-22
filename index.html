@@ -50,7 +50,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     document.dispatchEvent(new CustomEvent('CustomPageView', { detail: document.DataLayer }));
     window.dataLayer.push({
           event: document.DataLayer.eventName,
-          ...data});
+          ...document.DataLayer});
   
 </script>
 <!-- Código merda do Vini (noscript) -->
