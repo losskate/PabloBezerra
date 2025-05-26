@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+<script src="https://assets.adobedtm.com/25faba9991ad/a378e6610d35/launch-2160624325e2-development.min.js" async></script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -35,21 +36,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Código merda do Vini (noscript) -->
 <script>
-    document.DataLayer = {
-        event: "CustomPageView",
-        custom: {
-            report: {
-                FilterNames: "Número de Funcionários|Mosaic Business",
-                FilterValues: "0 até 10|20",
-                FilterAdditionalInfo: "xxx|xxxx"
-            }
-        },
-        rule: "pageLoad"
-    };
-
-    document.dispatchEvent(new CustomEvent('CustomPageView', { detail: document.DataLayer }));
-    window.dataLayer.push({...document.DataLayer});
-  
+// 1️⃣ Garante que o dataLayer existe
+window.dataLayer = window.dataLayer || [];
+// 2️⃣ Define o objeto de forma clara e reutilizável
+const customData = {
+  event: "CustomPageView",
+  custom: {
+    report: {
+      FilterNames: "Número de Funcionários|Mosaic Business",
+      FilterValues: "0 até 10|20",
+      FilterAdditionalInfo: "xxx|xxxx"
+    }
+  },
+  rule: "pageLoad"
+};
+// 3️⃣ Dispara o CustomEvent para o Adobe Launch
+document.dispatchEvent(new CustomEvent("CustomPageView", { detail: customData }));
+// 4️⃣ Empurra pro dataLayer para o GTM/GA4
+window.dataLayer.push(customData);
 </script>
 <!-- Código merda do Vini (noscript) -->
 
