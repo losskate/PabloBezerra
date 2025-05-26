@@ -39,8 +39,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 // 1️⃣ Garante que o dataLayer existe
 window.dataLayer = window.dataLayer || [];
-// 2️⃣ Define o objeto de forma clara e reutilizável
-const customData = {
+// 2️⃣ Define o objeto de forma clara e reutilizável  
   event: "CustomPageView",
   custom: {
     report: {
@@ -52,9 +51,9 @@ const customData = {
   rule: "pageLoad"
 };
 // 3️⃣ Dispara o CustomEvent para o Adobe Launch
-document.dispatchEvent(new CustomEvent("CustomPageView", { detail: customData }));
+document.dispatchEvent(new CustomEvent("CustomPageView"));
 // 4️⃣ Empurra pro dataLayer para o GTM/GA4
-window.dataLayer.push(customData);
+window.dataLayer.push();
 </script>
 <!-- Código merda do Vini (noscript) -->
 
