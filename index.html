@@ -39,7 +39,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 // 1️⃣ Garante que o dataLayer existe
 window.dataLayer = window.dataLayer || [];
-// 2️⃣ Define o objeto de forma clara e reutilizável  
+
+// 2️⃣ Define o objeto de forma clara e reutilizável
+const pageView = {
   event: "CustomPageView",
   custom: {
     report: {
@@ -50,10 +52,38 @@ window.dataLayer = window.dataLayer || [];
   },
   rule: "pageLoad"
 };
+
 // 3️⃣ Dispara o CustomEvent para o Adobe Launch
-document.dispatchEvent(new CustomEvent("CustomPageView"));
+document.dispatchEvent(new CustomEvent("CustomPageView", { detail: pageView }));
+
 // 4️⃣ Empurra pro dataLayer para o GTM/GA4
-window.dataLayer.push();
+window.dataLayer.push(pageView);
+
+</script>
+
+    <script>
+// 1️⃣ Garante que o dataLayer existe
+window.dataLayer = window.dataLayer || [];
+
+// 2️⃣ Define o objeto de forma clara e reutilizável
+const clique = {
+  event: "CliqueTeste",
+  custom: {
+    report: {
+      FilterNames: "Número de Funcionários|Mosaic Business",
+      FilterValues: "0 até 10|20",
+      FilterAdditionalInfo: "xxx|xxxx"
+    }
+  },
+  rule: "pageLoad"
+};
+
+// 3️⃣ Dispara o CustomEvent para o Adobe Launch
+document.dispatchEvent(new CustomEvent("CustomPageView", { detail: clique }));
+
+// 4️⃣ Empurra pro dataLayer para o GTM/GA4
+window.dataLayer.push(clique);
+
 </script>
 <!-- Código merda do Vini (noscript) -->
 
